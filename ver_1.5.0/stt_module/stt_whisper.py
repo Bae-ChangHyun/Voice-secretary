@@ -1,10 +1,8 @@
 import torch 
-import warnings
-
-warnings.filterwarnings("ignore", category=UserWarning, module="torch.functional")
 import whisper
 import speech_recognition as sr
-
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning, module="torch.functional")
 
 def module3(whisper_type='medium'):
     

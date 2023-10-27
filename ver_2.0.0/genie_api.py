@@ -4,6 +4,8 @@ from datetime import datetime
 import hmac, hashlib
 from pytz import timezone
 import pyttsx3
+
+# personal function
 from context_manager import context,context_utt_label
 from api_token_list import client_id,client_secret,client_key
 

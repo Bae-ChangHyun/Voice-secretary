@@ -7,11 +7,9 @@ import pyttsx3
 from gtts import gTTS
 from playsound import playsound
 
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-
 
 def initialize_speech_engine():
     global engine

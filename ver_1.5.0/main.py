@@ -1,17 +1,13 @@
 import speech_recognition as sr  # Speech-to-text
-
 import pyttsx3 # Text-to-speech 
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keyss
 
-from gtts import gTTS # Text-to-speech (google)
-from playsound import playsound
-
+# personal function
 from stt_module.stt_speech_recognition import module1
 from stt_module.stt_etri import module2
 from stt_module.stt_whisper import module3
-
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 
 engine = None  # 음성 엔진을 전역 변수로 설정
 
@@ -40,11 +36,9 @@ def get_weather(user_input):
     browser.find_element(By.ID, 'search-btn').click() # 해당 id 클릭(검색창)
     try:
         weather_data = browser.find_element(By.CLASS_NAME, 'summary_list').text
-        
         temp = weather_data.split(" ")[1]
         hum = weather_data.split(" ")[3]
         wind = weather_data.split(" ")[5]
-        
         return (f"기온은 {temp}이며, 습도는 {hum}이고 바람은 {wind} 입니다.")
     except:
         speak("제가 잘못된 정보를 찾은 것 같습니다. 다시 한번 말씀해주세요.")

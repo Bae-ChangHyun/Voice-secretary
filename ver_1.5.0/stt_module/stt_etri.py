@@ -4,9 +4,9 @@ import base64
 import json
 import speech_recognition as sr
 import pyttsx3
-from api_token_list import etri_accessKey
 
-openApiURL = "http://aiopen.etri.re.kr:8000/WiseASR/Recognition"
+# personal function
+from api_token_list import etri_accessKey
 
 def speak(text):
     engine = pyttsx3.init()
@@ -35,7 +35,7 @@ def module2(type):
     http = urllib3.PoolManager()
     response = http.request(
           "POST",
-          openApiURL,
+          "http://aiopen.etri.re.kr:8000/WiseASR/Recognition",
           headers={"Content-Type": "application/json; charset=UTF-8","Authorization": etri_accessKey},
           body=json.dumps(requestJson)
       )
