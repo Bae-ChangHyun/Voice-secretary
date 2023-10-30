@@ -1,9 +1,0 @@
-- kt genie의 일상대화 api를 사용
-
-- 유저와 일상대화 가능 -> 챗봇을 음성으로 소리나게 함
-
-- context_manager.py를 이용해서 대화의 맥락을 계속 유지 가능
-context: utterance 이전 채팅 문장 리스트 (리스트 최대길이 10, 문장당 최대 128자까지 처리)
-context_utt_label: context내 각 채팅 문장의 입력자 레이블 ("user" 또는 "sys")
-
-- 추후 kogpt 등 챗봇과 선택가능 예정

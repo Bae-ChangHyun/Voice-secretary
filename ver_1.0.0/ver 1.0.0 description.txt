@@ -1,2 +1,0 @@
-- speech_recognition을 통해서 sst가 이뤄지고, pyttsx3로 tts를 수행
-- 유저가 말한 내용에 '날씨'라는 단어가 존재하면, 네이버에서 크롤링

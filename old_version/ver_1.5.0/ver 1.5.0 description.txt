@@ -1,0 +1,2 @@
+- sst를 기존의 speech_recognition 외에 etri api와 whisper을 선택 가능 -> 인식률 개선용
+- tts는 기존의 pyttsx3 그대로 유지

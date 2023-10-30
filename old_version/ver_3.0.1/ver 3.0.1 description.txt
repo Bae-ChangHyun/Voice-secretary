@@ -1,0 +1,3 @@
+- 카카오톡 나, 친구에게 날씨 보내기 기능 추가
+- context_manager -> variable storage(모듈간 변수 연동용)
+- stt, tts 모두 모듈화
