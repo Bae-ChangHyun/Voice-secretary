@@ -56,36 +56,26 @@
 
 ### genie labs api 발급
 
-1. KT GenieLabs에 접속하여, 회원가입 
+1. [KT GenieLabs에 접속하여, 회원가입 ](https://genielabs.ai/main/genielabs/index)
 
-[](https://genielabs.ai/main/genielabs/index)
+   1-1. [상단의 API→NLP API로 이동하여 일상채팅 API를 클릭.]
+   (Readme%200e77a7118c354090b0b080fcf9c9dcd5/Untitled.png)
 
-1. 상단의 API→NLP API로 이동하여 일상채팅 API를 클릭.
+   1-2. API 사용신청 버튼을 클릭후, 게시판에 형식에 맞게 신청하여 API 발급
+   (Readme%200e77a7118c354090b0b080fcf9c9dcd5/Untitled%201.png)
 
-![Untitled](Readme%200e77a7118c354090b0b080fcf9c9dcd5/Untitled.png)
-
-1. API 사용신청 버튼을 클릭후, 게시판에 형식에 맞게 신청하여 API 발급
-
-![Untitled](Readme%200e77a7118c354090b0b080fcf9c9dcd5/Untitled%201.png)
-
-1. API발급이 완료되었으면, 화면 상단의 Developer Console의 Developer 클릭후 이동하여 
-
-![Untitled](Readme%200e77a7118c354090b0b080fcf9c9dcd5/Untitled%202.png)
-
-1. 화면 위의 Client id와 Client secret을 복사하여, 프로젝트 디렉토리의 utils-api_token_list.py에 genie에 해당하는 부분에 입력하고, 아래 My APIs에서 일상채팅 활성화 후 저장
-
-![Untitled](Readme%200e77a7118c354090b0b080fcf9c9dcd5/Untitled%203.png)
-
-![Untitled](Readme%200e77a7118c354090b0b080fcf9c9dcd5/Untitled%204.png)
-
-![Untitled](Readme%200e77a7118c354090b0b080fcf9c9dcd5/Untitled%205.png)
-
-1. id와 secret만 입력해놓으면, 추후 함수 내에서 certificate가 자동으로 실행되고, 프로그램이 정상 실행됨.
-2. 본인의 api 사용량은 genie labs 홈페이지의 Developer Console의 Dashboard에서 확인할 수 있음.
-
-![Untitled](Readme%200e77a7118c354090b0b080fcf9c9dcd5/Untitled%206.png)
-
-![Untitled](Readme%200e77a7118c354090b0b080fcf9c9dcd5/Untitled%207.png)
+   1-3. API발급이 완료되었으면, 화면 상단의 Developer Console의 Developer 클릭후 이동하여
+   화면 위의 Client id와 Client secret을 복사하여, 프로젝트 디렉토리의 utils-api_token_list.py에 genie에 해당하는 부분에 입력하고, 아래 My APIs에서 일상채팅 활성화 후 저장
+    ![Untitled](Readme%200e77a7118c354090b0b080fcf9c9dcd5/Untitled%202.png)
+   ![Untitled](Readme%200e77a7118c354090b0b080fcf9c9dcd5/Untitled%203.png)
+   ![Untitled](Readme%200e77a7118c354090b0b080fcf9c9dcd5/Untitled%204.png)
+   ![Untitled](Readme%200e77a7118c354090b0b080fcf9c9dcd5/Untitled%205.png)
+   
+  1-4. id와 secret만 입력해놓으면, 추후 함수 내에서 certificate가 자동으로 실행되고, 프로그램이 정상 실행됨.
+  
+  1-5  본인의 api 사용량은 genie labs 홈페이지의 Developer Console의 Dashboard에서 확인할 수 있음.
+  ![Untitled](Readme%200e77a7118c354090b0b080fcf9c9dcd5/Untitled%206.png)
+  ![Untitled](Readme%200e77a7118c354090b0b080fcf9c9dcd5/Untitled%207.png)
 
 ## 2. requirements.txt
 
