@@ -4,6 +4,10 @@
 - 아래의 필수 발급, 선택 발급을 모두 설치하시면 모든 기능을 이용하실 수 있으며, 
  필수 발급만 설치하면 날씨 카카오톡 메세지 전송, stt 모델 선택이 불가 기능이 불가합니다.
 - 프로그램은 app.py를 실행하여 실행합니다.
+![스크린샷 2023-10-31 232106](https://github.com/Bae-ChangHyun/toy_project/assets/48899047/97a26c4d-1b28-4790-8866-0405812d9a46)
+![스크린샷 2023-10-31 232141](https://github.com/Bae-ChangHyun/toy_project/assets/48899047/4faca36a-07fe-4dd0-a036-b3e8471bb2b4)
+
+  
 
 <details>
   <summary><h1>0. Update log(추후 작성 예정)</h1></summary>
