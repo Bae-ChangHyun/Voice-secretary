@@ -6,12 +6,9 @@ import speech_recognition as sr
 
 # personal function
 from voice_module.tts import speak
-
-# personal function
 from voice_module.record_voice import record
 from utils.api_token_list import etri_accessKey
 import variable_storage as var_s 
-
 
 def module2(type):
     record()

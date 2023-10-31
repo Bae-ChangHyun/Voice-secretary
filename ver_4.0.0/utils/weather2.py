@@ -34,7 +34,6 @@ def get_weather(user_input):
     driver = webdriver.Chrome(options=options)
     while(1):
         try:
-            # Open the Naver search page
             driver.get(f'https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query={user_input}')
             
             driver.implicitly_wait(1)
@@ -48,7 +47,7 @@ def get_weather(user_input):
             dusts = driver.find_element(By.XPATH, '//*[@id="main_pack"]/section[1]/div[1]/div[2]/div[1]/div[1]/div/div[2]/div/div[2]/ul/li[1]/a/span')
             summary = driver.find_element(By.XPATH,'//*[@id="main_pack"]/section[1]/div[1]/div[2]/div[1]/div[1]/div/div[2]/div/div[1]/div[2]/p/span[1]')
 
-            speak(f"{nowDate} {loc.text}의  기상정보입니다. {min_temps.text[5:]} {max_temps.text[5:]}이며, {temps.text[6:]}입니다. 오전 강수확률은 {am_rains.text}이고, 오후 강수확률은 {pm_rains.text}이며 미세먼지는 {dusts.text}입니다. 전체적으로 어제보다 {summary.text[:-2]}습니다.")
+            speak(f"{nowDate} {loc.text}의  기상정보입니다. {min_temps.text} {max_temps.text}이며, {temps.text}입니다. 오전 강수확률은 {am_rains.text}이고, 오후 강수확률은 {pm_rains.text}이며 미세먼지는 {dusts.text}입니다. 전체적으로 어제보다 {summary.text[:-2]}습니다.")
             weather_list=[loc.text, min_temps.text[5:], max_temps.text[5:],temps.text[6:],am_rains.text,pm_rains.text,dusts.text]
             try:
                 weather_kakao(weather_list)
