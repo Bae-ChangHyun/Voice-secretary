@@ -1,0 +1,35 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Voice secretary</h1>
+    <form action="/result" method="POST">
+        <label for="model">STT 모델을 선택해주세요</label>
+        <select name="model" id="model">
+            <option value="" selected>Select stt model</option>
+            <option value="speech_recognition">Speech Recognition</option>
+            <option value="etri">ETRI</option>
+            <option value="whisper">Whisper</option>
+        </select>
+        <input type="submit" value="Start" class="start-button">
+        <div id="whisper-options" style="display: none;">
+            <input type="radio" id="tiny" name="whisper_model" value="tiny">
+            <label for="tiny">Tiny</label>
+            <input type="radio" id="base" name="whisper_model" value="base">
+            <label for="base">Base</label>
+            <input type="radio" id="small" name="whisper_model" value="small">
+            <label for="small">Small</label>
+            <input type="radio" id="medium" name="whisper_model" value="medium">
+            <label for="medium">Medium</label>
+            <input type="radio" id="large" name="whisper_model" value="large">
+            <label for="large">Large</label>
+        </div>
+    </form>
+    <div id="model-description"></div>
+    <script src="{{ url_for('static', filename='index_script.js') }}"></script>
+</body>
+</html>
