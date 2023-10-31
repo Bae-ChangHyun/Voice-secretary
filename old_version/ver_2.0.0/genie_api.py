@@ -39,7 +39,7 @@ def giga_genie(user_input):
         "charset": "utf-8",
     } 
     
-    body = json.dumps({"user_id":"Chang hyun", "context":context, "context_utt_label":context_utt_label, "utterance":user_input}) 
+    body = json.dumps({"user_id":"User", "context":context, "context_utt_label":context_utt_label, "utterance":user_input}) 
     
     response = requests.post(url, data=body, headers=headers, verify=False)
     if response.status_code == 200:
