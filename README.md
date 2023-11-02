@@ -25,16 +25,18 @@
   <summary><h1>0. Update log(추후 작성 예정)</h1></summary>
 </details>
 
+# (Ver 4.1.0 기준)
+
 <details> 
   <summary><h1>1. 현재 메인 기능(필수설치+선택설치 가정)</h1></summary>
   
-  1. stt(speech to text)모델 선택 가능 → speech_recognition 라이브러리-google api /  ETRI api / openai whisper(로컬설치)
+  1. stt(speech to text)모델 선택 가능 → speech_recognition -google api /  ETRI api / Openai whisper(로컬설치)
 
-    → 선택 발급 미설치시, speech recognition만 가능.(현재 speech recognition도 구글의 소스로 이용하고 있고 추후 추가 예정)
+    → 선택 발급 미설치시, speech recognition만 가능.(현재 speech recognition만 열어두고, 나머지는 block 해둠)
   
     → ETRI는 인식률이 낮고, 하루 API호출 건수가 제한되어 있어 추후 삭제 예정
   
-    → Open AI의 Whisper이 가장 인식률이 좋으나, api는 유료여서 로컬에 설치하여 사용하도록 구성(추후 api 버전 추가 예정)
+    → Open AI의 Whisper이 가장 인식률이 좋으나, api는 유료여서 로컬에 설치하여 사용하도록 구성(추후 api 버전 추가 예정 -> api버전은 발급후speech_recognition에서 이용 가능)
 
   2. 날씨 키워드
 
@@ -61,17 +63,16 @@
 
 <details> 
   <summary><h1>2. 추후 추가 예정</h1></summary>
-  1. speech recognition의 다른 api들도 선택 가능하도록 변경
+  1. speech recognition의 다른 api들도 사용할 수 있도록 코드는 수정해놓았지만, api사전발급이 필요하여 block 처리해둠 <br>
+  네이버의 clova나 apple등의 다른 api도 알아보고 있음. 
   
-  2. open ai의 whisper을 사용자들이 사용할 수 있도록, 로컬 설치가 아닌 api로 변경 예정(api는 본인 발급)
+  2. 의도파악 혹은 일상채팅 api를 변경 혹은 모델을 직접 prompt tuning하여 더 매끄러운 대화가 진행되도록 변경 예정
      
-  3. 의도파악 혹은 일상채팅 api를 변경 혹은 모델을 직접 prompt tuning하여 더 매끄러운 대화가 진행되도록 변경 예정
+  3. 날씨 외의 다른 메인 키워드들 등록 예정(주식, 뉴스 등)
      
-  4. 날씨 외의 다른 메인 키워드들 등록 예정(주식, 뉴스 등)
-     
-  5.대화 기록 db을 result에서 확인하거나, 다운로드 받을 수 있도록 수정 예정(현재는 디렉토리에 자동저장됨) 
+  4.대화 기록 db을 result에서 확인하거나, 다운로드 받을 수 있도록 수정 예정(현재는 디렉토리에 자동저장됨) 
    
-  6. 웹 디자인, 기능 추가
+  5. 웹 디자인, 기능 추가
  </details>
 
 <details> 
@@ -134,7 +135,7 @@
   </details>
 
   <details>
-    <summary><h2>2. etri sst api key 발급</h2></summary>
+    <summary><h2>2. ETRI sst api key 발급</h2></summary>
   
   ETRI 한국전자통신연구원에서 제공되는 한국어 인식 API로 일일 1000건 사용 가능.<br> 
     
