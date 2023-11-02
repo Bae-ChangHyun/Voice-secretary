@@ -1,0 +1,48 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Voice secretary</h1>
+    <form action="/result" method="POsT">
+        <label for="model">sTT 모델을 선택해주세요</label>
+        <select name="model" id="model">
+            <option value="" selected>select STT module</option>
+            <option value="Speech recognition">Speech recognition</option>
+            <option value="ETRI api">ETRI</option>
+            <option value="Whisper">Whisper</option>
+        </select>
+        <input type="submit" value="start" class="start-button">
+
+        <div id="whisper-options" style="display: none;">
+            <input type="radio" id="tiny" name="whisper_model" value="tiny">
+            <label for="tiny">Tiny</label>
+            <input type="radio" id="base" name="whisper_model" value="base">
+            <label for="base">Base</label>
+            <input type="radio" id="small" name="whisper_model" value="small">
+            <label for="small">small</label>
+            <input type="radio" id="medium" name="whisper_model" value="medium">
+            <label for="medium">Medium</label>
+            <input type="radio" id="large" name="whisper_model" value="large">
+            <label for="large">Large</label>
+        </div>
+        <div id="sr-options" style="display: none;">
+            <input type="radio" id="google" name="speech_recognition_model" value="google">
+            <label for="google">Google</label>
+            <input type="radio" id="google_cloud_api" name="speech_recognition_model" value="google_cloud_api" disabled>
+            <label for="google_cloud_api">Google cloud api</label>
+            <input type="radio" id="vosk" name="speech_recognition_model" value="vosk" disabled>
+            <label for="vosk">Vosk</label>
+            <input type="radio" id="whisper_local" name="speech_recognition_model" value="whisper_local" disabled>
+            <label for="whisper_local">Whisper_local</label>
+            <input type="radio" id="whisper_api" name="speech_recognition_model" value="whisper_api" disabled>
+            <label for="whisper_api">Whisper_api</label>
+        </div>
+    </form>
+    <div id="model-description"></div>
+    <script src="{{ url_for('static', filename='index_script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* static/styles.css */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.start-button {
+    font-size: 24px; /* 원하는 크기로 조정하세요 */
+}
+form {
+    text-align: center;
+}
+#model-description {
+    border: 2px solid #000; /* 테두리 두께와 색상을 원하는 값으로 조정하세요 */
+    padding: 10px; /* 테두리와 내용 사이의 간격을 조정하세요 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+}
+

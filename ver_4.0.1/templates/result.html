@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="/static/result_style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Result</h1>
+        <p class="model-info">Selected Model: {{ selected_model }}</p>
+        <p class="model-info">Model Version: {{ model_version or 'none' }}</p>
+        <p id="processPid" class="process-info" data-pid="{{ process_pid }}"></p>
+        <a href="javascript:void(0);" id="stopProcessButton" class="stop-button">강제 종료</a>
+    </div>
+    <script src="/static/result_script.js"></script>
+</body>
+</html>
