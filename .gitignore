@@ -1,7 +1,8 @@
 # personal ignore
 junk/
 api_token_list.py
-ver_4.0.1/voice_module/models/
+prev_version/ver_4.0.1/voice_module/models/
+test_ver/
 
 
 # Byte-compiled / optimized / DLL files

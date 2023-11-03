@@ -30,8 +30,12 @@ def record():
      
 # speech_recognition 라이브러리의 다양한 api들을 지원.
 # google cloud, openai는 사전 api 발급이 필요
+# os.environ['OPENAI_API_KEY'] = 'API_KEY_HERE'
+# r(audio, model="small", language="chinese", **self.WHISPER_CONFIG)
 # vosk, whisper은 사전 설치가 필요
 # google은 기본적으로 사용 가능
+# GOOGLE_CLOUD_SPEECH_CREDENTIALS = r"""INSERT THE CONTENTS OF THE GOOGLE CLOUD SPEECH JSON CREDENTIALS FILE HERE"""
+#r.recognize_google_cloud(audio, credentials_json=GOOGLE_CLOUD_SPEECH_CREDENTIALS))
 def stt_speech_recognition():
   recognizer,audio = record()
   if(var_s.model_type=='google'):recognizers=recognizer.recognize_google
