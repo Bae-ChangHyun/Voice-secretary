@@ -24,11 +24,6 @@
 ![스크린샷 2023-11-03 115349](https://github.com/Bae-ChangHyun/Voice-secretary/assets/48899047/1c872014-72c8-4f00-9e28-46ef9196f8d0)
 ![스크린샷 2023-11-03 121654](https://github.com/Bae-ChangHyun/Voice-secretary/assets/48899047/c00a7c37-0b1b-4797-bf2e-bcee78a215bc)
 
-
-<details>
-  <summary><h1>0. Update log(추후 작성 예정)</h1></summary>
-</details>
-
 # (Ver 4.0.1 기준. 2023.11.01)
 
 <details> 
