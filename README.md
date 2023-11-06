@@ -19,8 +19,7 @@
 
 ### 실행 이미지
 ![스크린샷 2023-11-03 115238](https://github.com/Bae-ChangHyun/Voice-secretary/assets/48899047/ce714c11-5442-4829-84a0-a3da763e1dea)
-![스크린샷 2023-11-03 143419](https://github.com/Bae-ChangHyun/Voice-secretary/assets/48899047/a748397e-24f2-4a3a-ac80-1ec1a0cb6ac8)
-![스크린샷 2023-11-03 115249](https://github.com/Bae-ChangHyun/Voice-secretary/assets/48899047/644382b3-0a70-412e-a910-d90360ef4671)
+![스크린샷 2023-11-03 143419](https://github.com/Bae-ChangHyun/Voice-secretary/assets/48899047/a748397e-24f2-4a3a-ac80-1ec1a0cb6ac8) ![스크린샷 2023-11-03 115249](https://github.com/Bae-ChangHyun/Voice-secretary/assets/48899047/644382b3-0a70-412e-a910-d90360ef4671)
 ![스크린샷 2023-11-03 115349](https://github.com/Bae-ChangHyun/Voice-secretary/assets/48899047/1c872014-72c8-4f00-9e28-46ef9196f8d0)
 ![스크린샷 2023-11-03 121654](https://github.com/Bae-ChangHyun/Voice-secretary/assets/48899047/c00a7c37-0b1b-4797-bf2e-bcee78a215bc)
 
