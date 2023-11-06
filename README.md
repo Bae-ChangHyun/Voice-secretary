@@ -3,6 +3,8 @@
 - 프로그램 주제, 기능 ,ui 까지 전부 혼자 구현한 개인 프로젝트입니다. 
 - 혼자서 열심히 기능도 생각해보고, 오류도 찾아서 수정했지만 아직 부족한점이 많으니 사용하시게 된다면 많은 피드백 부탁드립니다.
 - 이상입니다. 
+- 더 자세한 프로젝트 내용 및 설명은 개인블로그를 참조해주시면 감사하겠습니다. 
+[개인블로그](https://changsroad.tistory.com/category/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/%EC%9D%8C%EC%84%B1%EB%B9%84%EC%84%9C)
 
 
 # [프로젝트 기간 10/26~11/01]
@@ -25,40 +27,43 @@
   <summary><h1>0. Update log(추후 작성 예정)</h1></summary>
 </details>
 
-# (Ver 4.1.0 기준)
+# (Ver 4.0.1 기준. 2023.11.01)
 
 <details> 
-  <summary><h1>1. 현재 메인 기능(필수설치+선택설치 가정)</h1></summary>
+  <summary><h1>1. 현재 메인 기능(필수 설치+선택 설치 가정)</h1></summary>
   
-  1. stt(speech to text)모델 선택 가능 → speech_recognition -google api /  ETRI api / Openai whisper(로컬설치)
+  1. stt(speech to text)모델 선택 가능 → 
+  : Speech Recognition liabrary : google speech recoginition,  Vosk, whisper api, whisper local, google cloud speech
+  : ETRI api 
+  : Openai whisper(로컬설치)
 
-    → 선택 발급 미설치시, speech recognition만 가능.(현재 speech recognition만 열어두고, 나머지는 block 해둠)
+    → speech recognition의 google speech recognition는 기본 사용 가능, vosk / whisper local 은 사전설 치, 나머지 사전 api 발급 필요
   
     → ETRI는 인식률이 낮고, 하루 API호출 건수가 제한되어 있어 추후 삭제 예정
-  
-    → Open AI의 Whisper이 가장 인식률이 좋으나, api는 유료여서 로컬에 설치하여 사용하도록 구성(추후 api 버전 추가 예정 -> api버전은 발급후speech_recognition에서 이용 가능)
 
-  2. 날씨 키워드
+  2. 날씨 알림
 
     → 사용자의 대화에 “날씨”가 들어가면, 해당 대화를 네이버에 query로 입력하여 날씨를 받아옴. 
   
     → 단, 사용자가 날씨를 묻는건지, 날씨에 대한 얘기를 하던 무조건 호출 (추후 의도파악 api등을 이용하여 구분 예정)
   
-    → 카카오톡 토큰이 정상적으로 발급되어있고, 세팅이 되어있으면 지정된 사용자들에게 날씨를 전송.
+    → 카카오톡 토큰이 발급 및 사전 세팅이 되어있으면 지정된 사용자들에게 날씨를 전송.
 
-  3.일상채팅 기능
+  3. 일상 대화
 
-    → genie labs의 일상채팅을 이용하여 키워드가 들어가지 않은 대화시, 일상채팅을 시도. 
+    → genie labs의 일상채팅 api를 이용하여 키워드(날씨)가 들어가지 않은 음성 인식시, 일상 채팅을 시도. 
   
     → 첫 답변은 잘하지만, 이전 대화기록을 인자로 넣어줘도 대화가 매끄럽지 않고 이전 대화 내용을 인식 못함.(추후 api 변경 혹은 버그가 있으면 수정 예정)
 
-  4.flask를 이용한 웹 ui
+  4. flask를 이용한 웹 ui
 
     → flask를 이용하여 서버를 열고, 웹 페이지로 구현함. 
   
     → 웹페이지 내에서 모델 선택하고 프로그램이 실행되도록 구현하였음.
+
   5. 대화 기록 저장
      → sqlite3를 이용하여, 대화기록을 저장(추후 대화기록을 결과창에서 확인 혹은 다운로드 가능하도록 수정 예정)
+
   </details>
 
 <details> 
@@ -80,7 +85,7 @@
     <details>
     <summary><h2>1. Genie labs api 발급</h2></summary>
       : 본 voice secretary는 genie labs의 일상대화 api를 통해 대화를 하도록 구성되었음.<br>  
-    메인키워드(날씨 등)외에는 모두 genie labs api를 이용하여 대화를 진행하도록 프로그래밍. <br>  
+    메인 키워드(날씨 등)외에는 모두 genie labs api를 이용하여 대화를 진행하도록 프로그래밍. <br>  
     아래 발급절차를 통해 발급받고, utils-api_token_list.py에 저장해야함. 이 키들은 모두 local에만 저장됨.<br>  
       
     1-1. [KT GenieLabs에 접속하여, 회원가입 ](https://genielabs.ai/main/genielabs/index)
