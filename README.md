@@ -1,21 +1,17 @@
 ## Notice
 - 데이터분석, 머신러닝 하다가 질릴 때 심심풀이로 정성들여 만든 프로그램들입니다.
-- 프로그램 주제, 기능 ,ui 까지 전부 혼자 구현한 개인 프로젝트입니다. 
+- 프로그램 주제, 기능 ,ui 까지 구현한 개인 프로젝트입니다. 
 - 혼자서 열심히 기능도 생각해보고, 오류도 찾아서 수정했지만 아직 부족한점이 많으니 사용하시게 된다면 많은 피드백 부탁드립니다.
-- 이상입니다. 
 - 더 자세한 프로젝트 내용 및 설명은 개인블로그를 참조해주시면 감사하겠습니다. 
 [개인블로그](https://changsroad.tistory.com/category/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/%EC%9D%8C%EC%84%B1%EB%B9%84%EC%84%9C)
 
 
 # [프로젝트 기간 10/26~11/01]
-- 추가 되었으면 하는 기능이 있는지 알려주시면, 추가해보겠습니다.
-- 많은 디버깅을 하며, 오류를 잡았지만, 그럼에도 오류가 발생하는 부분이 있다면 알려주시면 감사하겠습니다.
   
-- 아래의 필수 발급, 선택 발급을 모두 설치하시면 모든 기능을 이용하실 수 있으며, <br>
+- 아래의 필수 발급, 선택 발급을 설치하시면 모든 기능을 이용하실 수 있으며, <br>
  필수 발급만 설치하면 날씨 카카오톡 메세지 전송, stt 모델 선택이 불가 기능이 불가합니다.
 - 프로그램은 app.py를 실행하여 실행합니다.
 - 현재는 사전 세팅이 많이 필요하며, 키워드가 날씨만 지정되어있어 기능이 부족하지만, 일상대화 및 ui를 구현한데 의의를 둠.
-- 추후에 다양한 기능을 추가해보겠습니다. 
 
 ### 실행 이미지
 <img src="https://github.com/Bae-ChangHyun/Voice-secretary/assets/48899047/ce714c11-5442-4829-84a0-a3da763e1dea.png"  width="1100" height="400"/>
@@ -23,7 +19,6 @@
 <img src="https://github.com/Bae-ChangHyun/Voice-secretary/assets/48899047/644382b3-0a70-412e-a910-d90360ef4671.png"  width="480" height="330"/>
 <img src="https://github.com/Bae-ChangHyun/Voice-secretary/assets/48899047/1c872014-72c8-4f00-9e28-46ef9196f8d0.png"  width="500" height="150"/>
 <img src="https://github.com/Bae-ChangHyun/Voice-secretary/assets/48899047/c00a7c37-0b1b-4797-bf2e-bcee78a215bc.png"  width="500" height="150"/>
-
 
 # (Ver 4.0.1 기준. 2023.11.01)
 
