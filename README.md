@@ -143,9 +143,9 @@
   </details>
   <details>
     <summary><h2>3. Whisper 설치</h2></summary>
-  open ai sst 모델인 whisper. 버전에 따라 매우 우수한 성능을 보이며 api도 제공되지만, 유료이며 본 프로젝트 특성상 개인 비서용으로 제작되어 local에 whisper을 직접 설치하여 프로그래밍하였음.
+  open ai sst 모델인 whisper. 버전에 따라 매우 우수한 성능을 보이며 api도 제공되지만, 유료이기 때문에 local 직접 설치하여 사용하였음
   
-  아래 링크에서 whisper을 정상적으로 설치하고, 프로젝트 가상환경에 해당 라이브러리 및 gpu가 사용가능한 환경을 만들어놔야 정상적으로 실행가능. 
+  아래 링크를 참조하여 whisper을 설치하고, 프로젝트 가상환경에 해당 라이브러리 및 gpu가 사용가능한 환경을 만들어놔야 정상적으로 실행가능. 
   
   [Open ai - Whisper 설치](https://changsroad.tistory.com/361)
   </details>
